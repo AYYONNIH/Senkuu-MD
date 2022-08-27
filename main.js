@@ -116,13 +116,7 @@ async function start(){
   let { version, isLatest } = await fetchLatestBaileysVersion()
   console.clear();
   console.log(color('------------------------------------------------------------------------', 'white'))
-  // Jika eror figlet (Doom) , hapus console yg ada di bawah ini!! [ Teruntuk user heroku :v ]
-  console.log(color(figlet.textSync('Senkuu', { font: 'doom', horizontalLayout: 'default' })))
-  console.log(color('------------------------------------------------------------------------', 'white'))
-  console.log(color('[CREATOR]', 'aqua'), color(config.author, 'magenta'))
-  console.log(color('[BOT]', 'aqua'), color('BOT is now Online!', 'magenta'))
-  console.log(color('[VER]', 'aqua'), color(`${version}`, 'magenta'))
-    
+  // Jika eror figlet (Doom) , hapus console yg ada di bawah ini!! [ Teruntuk user heroku :v
   const conn = Baileys({
     printQRInTerminal: true,
 		auth: state,
